@@ -1,0 +1,1 @@
+C:\Users\PC\Stellar\Event\ Attendance\ Pass\contracts\event_attendance\target\wasm32v1-none\release\event_attendance.wasm: C:\Users\PC\Stellar\Event\ Attendance\ Pass\contracts\event_attendance\src\lib.rs

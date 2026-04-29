@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+.tag {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 12px;
+  background: #eef2ff;
+  color: #4338ca;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 16px 0 8px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.desc {
+  color: #6b7280;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.eventBox {
+  margin: 24px 0;
+  padding: 20px;
+  border-radius: 18px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.eventBox h2 {
+  margin-top: 0;
+}
+
+.eventBox p {
+  margin: 8px 0;
+  word-break: break-all;
+}
+
+.walletPanel {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.walletPanel h3 {
+  margin-top: 0;
+}
+
+.walletPanel p {
+  color: #374151;
+  line-height: 1.5;
+}
+
+.walletKitButton {
+  margin: 18px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.primaryBtn {
+  width: 100%;
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background: #1f2937;
+}
+
+.disconnectBtn {
+  width: 100%;
+  margin-top: 14px;
+  background: #991b1b;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.disconnectBtn:hover {
+  background: #7f1d1d;
+}
+
+.connectedBox {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  word-break: break-all;
+  text-align: left;
+}
+
+.connectedBox p {
+  margin: 6px 0;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.actions button {
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #1d4ed8;
+}
+
+.actions button:last-child {
+  background: #059669;
+}
+
+.actions button:last-child:hover {
+  background: #047857;
+}
+
+.statusBox {
+  margin-top: 24px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.statusBox.pending {
+  background: #fef3c7;
+}
+
+.statusBox.success {
+  background: #dcfce7;
+}
+
+.statusBox.fail {
+  background: #fee2e2;
+}
+
+.message {
+  margin-top: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.txHash {
+  margin-top: 14px;
+  word-break: break-all;
+  color: #374151;
+}
+
+.txHash span {
+  font-family: monospace;
+}
+
+.requirements {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.requirements h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.requirements ul {
+  padding-left: 22px;
+}
+
+.requirements li {
+  margin: 8px 0;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+}
